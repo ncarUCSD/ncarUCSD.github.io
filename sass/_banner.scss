@@ -27,6 +27,7 @@
             display: table-cell;
             vertical-align: middle;
             padding-top: 155px;
+
             @media #{$tab} {
                 vertical-align: middle;
                 padding-top: 0;
@@ -115,6 +116,7 @@
 
         .btn_2 {
             margin-top: 50px;
+
             @media #{$tab} {
                 margin-top: 20px;
             }
@@ -124,9 +126,9 @@
             }
         }
     }
-    
+
     @media #{$tab} {
-        .banner_img{
+        .banner_img {
             display: none;
         }
     }
