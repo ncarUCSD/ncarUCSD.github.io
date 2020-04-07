@@ -2,13 +2,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-body {
-  color: #333;
-  background: #fcfcfc;
-  font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
-}
-
 .faq-header {
   font-size: 42px;
   border-bottom: 1px dotted #ccc;
@@ -142,7 +135,6 @@ body {
 .slider .slide {
   height: 400px;
 }
-
 /* line 1, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_extends.scss */
 .btn_1,
 .btn_2,
