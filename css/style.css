@@ -4077,6 +4077,7 @@ ul {
 
 /* line 85, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
 .doctor_part .single_blog_text {
+  line-height: normal;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding: 37px 0 0;
@@ -4088,6 +4089,7 @@ ul {
 
   /* line 85, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_doctor_list.scss */
   .doctor_part .single_blog_text {
+    line-height: normal;
     padding: 22px 0 0;
   }
 }
