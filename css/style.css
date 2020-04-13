@@ -2809,6 +2809,22 @@ ul {
     padding-top: 0px;
     height: 650px;
   }
+
+  .navbar {
+    justify-content: left;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-brand {
+    margin-left: 5px;
+  }
+
+  .navbar-brand p {
+    font-size: 10px !important;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
