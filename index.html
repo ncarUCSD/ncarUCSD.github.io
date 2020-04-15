@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153198439-2"></script>
     <script>window.dataLayer = window.dataLayer || [];
@@ -546,6 +547,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="cookie-consent-banner" id="cookies">
+            <div class="cookie-consent-banner__inner">
+                <div style="display: inline-block; margin-right: 40px;" class="cookie-consent-banner__copy">
+                    <!-- <div class="cookie-consent-banner__header">THIS WEBSITE USES COOKIES</div> -->
+                    <div class="cookie-consent-banner__description">We use <a
+                            href="https://www.cookiepolicygenerator.com/live.php?token=oxdVp8MdQp2FZya4EUjNE6OocMQy0HBJ">cookies
+                        </a>
+                        for website optimisation and Google
+                        Analytics.
+
+
+                    </div>
+                </div>
+
+
+                <div style="display: inline-block; text-align: right;" class="cookie-consent-banner__actions">
+                    <a id="acceptCookiesButton" class="cookie-consent-banner__cta">
+                        OK
+                    </a>
+
+                    <a href="mailto:team@maskshare.co.uk subject=I Don't Accept the Mask Share UK Cookies"
+                        class="cookie-consent-banner__cta cookie-consent-banner__cta--secondary">
+                        Decline (email)
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </footer>
     <!-- footer part end-->
     <!-- jquery plugins here-->
@@ -565,6 +595,13 @@
     <script src="js/contact.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>
+        document.getElementById('acceptCookiesButton').onclick = () => {
+            console.log("works")
+            document.getElementById('cookies').style.display = 'none';
+        }
+
+    </script>
 </body>
 
 </html>
