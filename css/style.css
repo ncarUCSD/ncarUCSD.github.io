@@ -2801,7 +2801,29 @@ ul {
   }
 }
 
+.desc_masks {
+  height: 130px;
+  font-size: 10px;
+}
+
+.mask_type_header {
+
+  height: 63px;
+
+}
+
+
 @media (max-width: 576px) {
+  .desc_masks {
+    height: 100%;
+  }
+
+  .mask_type_header {
+    height: 100%;
+  }
+.single_feature_img {
+  height: 100%;
+}
 
   /* line 21, ../../01 cl html template/03_jun 2019/182_medico_html/sass/_banner.scss */
   .banner_part .banner_text {
