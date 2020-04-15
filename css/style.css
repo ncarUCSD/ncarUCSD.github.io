@@ -6732,24 +6732,24 @@ p {
 
   font-family: "CeraPRO-Bold", sans-serif, arial;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .cookie-consent-banner__description {
   font-family: "CeraPRO-Regular", sans-serif, arial;
   font-weight: normal;
   color: #838F93;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
 
 }
 
 .cookie-consent-banner__cta {
   box-sizing: border-box;
   display: inline-block;
-  min-width: 140px;
-  padding: 8px 8px;
+  min-width: 120px;
+  padding: 6px 6px;
 
   border-radius: 2px;
 
@@ -6760,8 +6760,8 @@ p {
   text-align: center;
   font-family: "CeraPRO-Regular", sans-serif, arial;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .cookie-consent-banner__cta--secondary {
