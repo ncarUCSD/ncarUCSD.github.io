@@ -9,7 +9,7 @@
     background-position: center;
 
     @media #{$tab} {
-        background-image: none;
+        // background-image: none;
         background-color: #f7f7f7;
         height: 650px;
     }
@@ -129,7 +129,7 @@
 
     @media #{$tab} {
         .banner_img {
-            display: none;
+            display: block;
         }
     }
 
