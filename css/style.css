@@ -6758,7 +6758,9 @@ p {
   color: #FFF;
   text-decoration: none;
   text-align: center;
-  font-family: "CeraPRO-Regular", sans-serif, arial;
+  font-family: "CeraPRO-Regular",
+    sans-serif,
+    arial;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
@@ -6804,6 +6806,274 @@ p {
 }
 
 
+
+
+
+.modal {
+  will-change: visibility, opacity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal--active-top {
+  align-items: flex-start;
+}
+
+.modal__bg {
+  background-color: #888;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__dialog {
+  max-width: 600px;
+  padding: 1.2rem;
+}
+
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 200px;
+  overflow: hidden;
+  z-index: 1;
+  background: #fff;
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.modal__content--active {
+  opacity: 1;
+}
+
+.modal__title {
+  align-items: center;
+  color: #000;
+  display: block;
+  display: flex;
+  justify-content: stretch;
+  line-height: normal;
+  padding: 16px;
+  perspective-origin: 165px 56px;
+  transform-origin: 165px 56px;
+  box-sizing: border-box;
+}
+
+.modal__title .modal__title-text {
+  align-self: flex-end;
+  color: inherit;
+  display: block;
+  display: flex;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  transform-origin: 149px 48px;
+  margin: 0;
+}
+
+.modal__text {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 13px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 16px;
+  width: 90%;
+}
+
+.modal__footer {
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  background-color: transparent;
+  padding: 8px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.modal__header .modal__close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.modal__trigger--active {
+  z-index: 10;
+  background-color: #ddd;
+}
+
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: none;
+  opacity: 1;
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+body {
+  width: 100%;
+  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grid.png) repeat #fefefe;
+}
+
+
+.modalbg {
+  overflow: scroll;
+  position: fixed;
+  font-family: "Playfair Display", sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99999;
+  -moz-transition: all 2s ease-out;
+  -webkit-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  -webkit-transition-delay: .2s;
+  -moz-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  -transition-delay: .2s;
+  display: block;
+  pointer-events: none;
+}
+
+.modalbg .dialog {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: -2000px;
+  margin: 10% auto;
+  padding: 30px 30px 30px 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  border-radius: 5px;
+  background: #F1F9FF;
+  background: -moz-linear-gradient(#F1F9FF, #ccc);
+  background: -webkit-linear-gradient(#F1F9FF, #ccc);
+  background: -o-linear-gradient(#F1F9FF, #ccc);
+  box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px #000;
+  margin-top: 100px;
+}
+
+.modalbg .dialog .ie7 {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+
+.modalbg:target {
+  display: block;
+  pointer-events: auto;
+  background: rgba(4, 10, 30, 0.8);
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.modalbg:target .dialog {
+  top: -90px;
+  -moz-transition: all .8s ease-out;
+  -webkit-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  -transition-delay: .4s;
+}
+
+.close {
+  text-align: center;
+  vertical-align: center;
+  font-family: "Playfair Display", sans-serif;
+  background: #5C96FF;
+  padding-bottom: 5px;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+  -webkit-transition-delay: .2s;
+  -moz-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  -transition-delay: .2s;
+}
+
+.close .ie7 {
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
+}
+
+.close:hover {
+  background: #5C96FF;
+  -moz-transition: all .5s ease-out;
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.fineprint {
+  font-style: italic;
+  font-size: 10px;
+  color: #5C96FF;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+
 @media (max-width: 576px) {
   .bannerTop {
     display: block;
@@ -6830,4 +7100,18 @@ p {
   .join_volunteer {
     margin-top: 20px !important;
   }
+
+  .modalbg .dialog {
+    /* padding: 0px; */
+    margin-top: 50px;
+    padding-top: 100px;
+    overflow-x: scroll;
+  }
+
+  .close {
+    top: 7%;
+    left: 90%;
+  }
+
+
 }
