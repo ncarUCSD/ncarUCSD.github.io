@@ -6984,9 +6984,7 @@ p {
   margin-top: 100px;
 }
 
-.modalbg .dialog .ie7 {
-  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
-}
+
 
 .modalbg:target {
   display: block;
@@ -7041,9 +7039,6 @@ p {
   -transition-delay: .2s;
 }
 
-.close .ie7 {
-  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
-}
 
 .close:hover {
   background: #5C96FF;
