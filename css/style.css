@@ -6941,14 +6941,6 @@ p {
   transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-
-body {
-  width: 100%;
-  background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grid.png) repeat #fefefe;
-}
-
-
 .modalbg {
   overflow: scroll;
   position: fixed;
