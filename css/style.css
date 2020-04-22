@@ -7060,9 +7060,18 @@ a {
   text-decoration: none;
 }
 
+.single_text {
 
+  margin-bottom: 80px;
+}
 
 @media (max-width: 576px) {
+
+  .single_text {
+
+    /* margin-bottom: 0px; */
+  }
+
   .bannerTop {
     display: block;
 
